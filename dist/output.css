@@ -670,6 +670,10 @@ video {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -1000,6 +1004,16 @@ video {
 
 .bg-clip-padding {
   background-clip: padding-box;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1 {
