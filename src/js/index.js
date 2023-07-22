@@ -4,9 +4,8 @@ addEventListener('DOMContentLoaded', () => {
 
 const mensagemEnviar = () => {
     const $containerMensagens = document.querySelector('.js-mensagens-container')
-    const $campoEnviar = $containerMensagens.querySelector('.js-enviar-campo')
-    const $campoEnviarBtn = $containerMensagens.querySelector('.js-enviar-btn')
-    const $enviarSom = $containerMensagens.querySelector('audio')
+    const $campoEnviar = document.querySelector('.js-enviar-campo')
+    const $campoEnviarBtn = document.querySelector('.js-enviar-btn')
 
     
     $campoEnviarBtn.addEventListener('click', () => {
@@ -26,7 +25,6 @@ const mensagemEnviar = () => {
         $mensagemDoUsuario.innerText = campoEnviarValor
         mensagemEstilizar($mensagemDoUsuario)
         $containerMensagens.append($mensagemDoUsuario)
-        $enviarSom.play()
 
         mensagemTransicao($mensagemDoUsuario)
 
