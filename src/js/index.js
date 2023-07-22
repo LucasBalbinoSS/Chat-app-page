@@ -1,19 +1,19 @@
 addEventListener('DOMContentLoaded', () => {
-    mensagemEnviar()
+    mensagemCliente()
 })
 
-const mensagemEnviar = () => {
+const mensagemCliente = () => {
     const $containerMensagens = document.querySelector('.js-mensagens-container')
     const $campoEnviar = document.querySelector('.js-enviar-campo')
     const $campoEnviarBtn = document.querySelector('.js-enviar-btn')
 
     
     $campoEnviarBtn.addEventListener('click', () => {
-        mensagemCriar()
+        mensagemEnviar()
         campoLimpar()
     })
 
-    function mensagemCriar() {
+    function mensagemEnviar() {
         const campoEnviarValor = $campoEnviar.value
         const $mensagemDoUsuario = document.createElement('li')
 
@@ -40,7 +40,7 @@ const mensagemEnviar = () => {
     }
 
     function mensagemEstilizar($alvo) {
-        $alvo.classList.add('max-w-[12rem]', 'break-words', 'bg-white', 'text-neutral-500', 'hover:-translate-y-0.5', 'hover:transition-transform', 'duration-300', 'shadow-md', 'self-end', 'p-2', 'rounded-l-xl', 'rounded-tr-xl', 'opacity-0', 'transition-opacity')
+        $alvo.classList.add('mensagem-cliente', 'opacity-0')
     }
 
     function campoLimpar() {
