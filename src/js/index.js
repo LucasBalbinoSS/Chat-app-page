@@ -13,6 +13,17 @@ const mensagemCliente = () => {
         campoLimpar()
     })
 
+    $campoEnviar.addEventListener('keydown', () => {
+        teclaEnter(event)
+
+        function teclaEnter(event) {
+            if (event.keyCode === 13) {
+                mensagemEnviar()
+                campoLimpar()
+            }
+          }
+    })
+
     function mensagemEnviar() {
         const campoEnviarValor = $campoEnviar.value
         const $mensagemDoUsuario = document.createElement('li')
@@ -23,10 +34,11 @@ const mensagemCliente = () => {
         }
 
         $mensagemDoUsuario.innerText = campoEnviarValor
-        mensagemEstilizar($mensagemDoUsuario)
         $containerMensagens.append($mensagemDoUsuario)
-
+        
+        mensagemEstilizar($mensagemDoUsuario)
         mensagemTransicao($mensagemDoUsuario)
+        campoLimpar()
 
         // faz o scroll para o final da lista de mensagens
         $containerMensagens.scrollTop = $containerMensagens.scrollHeight
