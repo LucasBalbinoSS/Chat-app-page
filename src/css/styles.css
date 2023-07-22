@@ -9,7 +9,7 @@
     }
 
     .mensagem-cliente {
-        @apply max-w-[12rem] bg-white text-neutral-500 hover:-translate-y-0.5 hover:transition-transform duration-300 shadow-md self-end p-2 rounded-l-xl rounded-tr-xl transition-opacity;
+        @apply max-w-[12rem] bg-white text-neutral-500 hover:-translate-y-0.5 hover:transition-transform duration-300 shadow-md self-end p-2 rounded-l-xl rounded-tr-xl transition-opacity break-words;
     }
   }
 
