@@ -1,6 +1,6 @@
 # Chat app page
 👉 [Click here to see the project](https://lucasbalbinoss.github.io/Chat-app-page/src/) <br>
- The chat app page page is a good design practice training project. 📚 🖌️
+ The chat app page is a good design practice training project. 📚 🖌️
 
 On that chat page the user can:
 - See a good design with some nice colors and typography 🎨 🔤
