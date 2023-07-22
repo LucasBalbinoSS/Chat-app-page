@@ -763,10 +763,6 @@ video {
   overflow-y: auto;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .rounded-\[2\.5rem\] {
   border-radius: 2.5rem;
 }
@@ -964,6 +960,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -986,6 +987,10 @@ video {
 
 .leading-\[-1\%\] {
   line-height: -1%;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .tracking-tighter {
